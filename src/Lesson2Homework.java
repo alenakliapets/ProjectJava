@@ -51,11 +51,16 @@ public class Lesson2Homework {
         if (number1>number2) System.out.println(number1);
         else System.out.println(number2);
     }
-    public static void taskSeven(){
-        Scanner scanner=new Scanner(System.in);
-        int number=Integer.parseInt(scanner.nextLine());
-        if (number%10==1) System.out.println(number+" программист");
-        else {if ((number%10>=2)&&(number%10<=4))System.out.println(number+" программиста");
-        else System.out.println(number+" программистов");}
+    public static void taskSeven() {
+        Scanner scanner = new Scanner(System.in);
+        int number = Integer.parseInt(scanner.nextLine());;
+        if ((number % 100 >= 11) && (number % 100 <= 14)) System.out.println(number + " программистов");
+        else {
+            if (number % 10 == 1) System.out.println(number + " программист");
+            else {
+                if ((number % 10 >= 2) && (number % 10 <= 4)) System.out.println(number + " программиста");
+                else System.out.println(number + " программистов");
+            }
+        }
     }
 }
