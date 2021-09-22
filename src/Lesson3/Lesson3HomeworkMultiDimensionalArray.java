@@ -79,8 +79,6 @@ public class Lesson3HomeworkMultiDimensionalArray {
                 if (i==number-j-1) mult2*=array[i][j];
             }
         }
-        System.out.println(mult1);
-        System.out.println(mult2);
         if (mult1>mult2) System.out.println("Произведение элементов главной диагонали больше");
         else {
             if (mult1<mult2) System.out.println("Произведение элементов побочной диагонали больше");

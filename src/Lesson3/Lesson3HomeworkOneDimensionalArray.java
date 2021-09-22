@@ -88,8 +88,6 @@ int number=2;
         System.out.println();
         double srednee1=(double) sum1/array1.length;
         double srednee2=(double) sum2/array2.length;
-//        System.out.println(srednee1);
-//        System.out.println(srednee2);
        if (srednee1>srednee2) System.out.println("Среднее арифметическое эмлементов первого массива больше");
        else  {
            if (srednee2>srednee1) System.out.println("Среднее арифметическое эмлементов второго массива больше");
@@ -110,9 +108,6 @@ int number=2;
         System.out.println();
         if (count==3) System.out.println("Данный массив является строго возрастающей последовательностью");
         else System.out.println("Данный массив не является строго возрастающей последовательностью");
-    //потратила 15 минут на перебор массивов рандомом и поймала массив со строго возрастающей последовательностью)))
-    // 1 2 7 8
-    // Данный массив является строго возрастающей последовательностью
     }
     public  void taskSeven(){
         Random random = new Random();
@@ -121,11 +116,9 @@ int number=2;
         int[] array = new int[12];
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(16);//в задаче указан диапазон чисел 0-15, в лекции было сказано, что надо включать число 15, поэтому в рандом записано число 16
-            //System.out.print(array[i] + " ");
             if(array[i]>max) max=array[i];
             if (array[i]==max) index=i;
         }
-        //System.out.println();
         System.out.println("Индекс последнего вхождения максимального элемента "+max+" в массив равен "+index);
     }
     public  void taskEight(){
@@ -153,8 +146,6 @@ int number=2;
             }
             }
             System.out.println();
-//            System.out.println(sum1);
-//            System.out.println(sum2);
             if (sum1>sum2) System.out.println("Сумма элементов левой половины массива больше");
             else {
                 if (sum2>sum1) System.out.println("Сумма элементов правой половины массива больше");
