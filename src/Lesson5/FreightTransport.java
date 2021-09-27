@@ -14,14 +14,14 @@ public class FreightTransport extends LandTransport{
         this.liftingCapacity = liftingCapacity;
     }
     public String description(){
-        return "Мощность машины в лошадиных силах составляет "+power+" л.с." +"\n"+
-                "Мощность машины в киловаттах составляет "+getPowerKv()+" кВ."+"\n"+
-                "Максимальная скорость равна "+ maxSpeed +" км/ч."+"\n"+
-                "Масса машины равна "+weight+" кг."+"\n"+
-                "Марка машины "+brand+"."+"\n"+
-                "Количество колес равно "+numberOfWheels+" шт."+"\n"+
-                "Расход топлива равен "+ fuelConsumption+" л/100 км"+"\n"+
-                "Грузоподъемность равна "+liftingCapacity+" т.";
+        return "Мощность грузовой машины в лошадиных силах составляет "+power+" л.с." +"\n"+
+                "Мощность грузовой машины в киловаттах составляет "+getPowerKv()+" кВ."+"\n"+
+                "Максимальная скорость грузовой машины равна "+ maxSpeed +" км/ч."+"\n"+
+                "Масса грузовой машины равна "+weight+" кг."+"\n"+
+                "Марка грузовой машины "+brand+"."+"\n"+
+                "Количество колес грузовой машины равно "+numberOfWheels+" шт."+"\n"+
+                "Расход топлива грузовой машины равен "+ fuelConsumption+" л/100 км"+"\n"+
+                "Грузоподъемность грузовой машины равна "+liftingCapacity+" т.";
     }
     public void loading(double cargoWeight){
 if (cargoWeight<=liftingCapacity) System.out.println("Грузовик загружен");

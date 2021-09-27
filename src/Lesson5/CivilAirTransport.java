@@ -16,15 +16,15 @@ public class CivilAirTransport extends AirTransport{
         this.businessClassAvailability = businessClassAvailability;
     }
     public String description(){
-        return "Мощность самолета в лошадиных силах составляет "+power+" л.с." +"\n"+
-                "Мощность самолета в киловаттах составляет "+getPowerKv()+" кВ."+"\n"+
-                "Максимальная скорость равна "+ maxSpeed +" км/ч."+"\n"+
-                "Масса самолета равна "+weight+" кг."+"\n"+
-                "Марка самолета "+brand+"."+"\n"+
-                "Размах крыльев равен "+wingspan+" м."+"\n"+
-                "Минимальная длина ВПП для взлета "+ minimumRunwayLengthForTakeOff+" м"+"\n"+
-                "Количество пассажиров равно  "+numberOfPassengers+" человек."+"\n"+
-                "Есть ли бизнес класс  "+businessClassAvailability+" .";
+        return "Мощность пассажирского самолета в лошадиных силах составляет "+power+" л.с." +"\n"+
+                "Мощность пассажирского самолета в киловаттах составляет "+getPowerKv()+" кВ."+"\n"+
+                "Максимальная скорость пассажирского самолета равна "+ maxSpeed +" км/ч."+"\n"+
+                "Масса пассажирского самолета равна "+weight+" кг."+"\n"+
+                "Марка пассажирского самолета "+brand+"."+"\n"+
+                "Размах крыльев пассажирского самолета равен "+wingspan+" м."+"\n"+
+                "Минимальная длина ВПП для взлета пассажирского самолета "+ minimumRunwayLengthForTakeOff+" м"+"\n"+
+                "Количество пассажиров пассажирского самолета равно  "+numberOfPassengers+" человек."+"\n"+
+                "Есть ли бизнес класс в пассажирском самолете  "+businessClassAvailability+" .";
     }
     public void loadingPassengers(int ourNumberOfPass){
         if (ourNumberOfPass<=numberOfPassengers) System.out.println("Самолет заполнен");
