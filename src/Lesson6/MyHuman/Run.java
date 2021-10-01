@@ -18,10 +18,11 @@ public class Run {
                 new GucciPants(150),new DolceGabbanaShoes(250));
         Human thirdHuman = new Human("Сергей", new GucciJacket(200),
                 new DolceGabbanaPants(300), new VersaceShoes(300));
+        System.out.println(firstHuman.getName());
         firstHuman.putOn();
-        System.out.println();
+        System.out.println(secondHuman.getName());
         secondHuman.putOn();
-        System.out.println();
+        System.out.println(thirdHuman.getName());
         thirdHuman.putOn();
         System.out.println();
         int first=firstHuman.getPrice();
