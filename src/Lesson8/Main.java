@@ -33,6 +33,7 @@ public class Main {
                     }
                 }
             });
+        System.out.println("Выводим на экран все товары с сортировкой по цене");
         for (int i = 0; i < list2.size(); i++) {
             System.out.println(list2.get(i).getId()+"-"+list2.get(i).getName()+"-"+list2.get(i).getPrice());
         }
@@ -42,10 +43,12 @@ public class Main {
             System.out.println(list.get(i).getId()+"-"+list.get(i).getName()+"-"+list.get(i).getPrice());
         }
         System.out.println("-----------");
+        System.out.println("Выводим на экран все товары с сортировкой по порядку добавления (сначала новые)");
         for (int i = list.size()-1; i >= 0; i--) {
             System.out.println(list.get(i).getId()+"-"+list.get(i).getName()+"-"+list.get(i).getPrice());
         }
         System.out.println("-----------");
+        System.out.println("Редактируем товар и выводим список товаров на экран");
         myShop.editProduct(new Product(30005, "Still Water",4));
         ArrayList <Product> list3 = new ArrayList<>(myShop.returnProducts());
         for (int i = 0; i < list3.size(); i++) {

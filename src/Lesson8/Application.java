@@ -79,7 +79,8 @@ switch (number){
         Main2.myShop.deleteProduct(idDelete);
         break;
     case 4:
-        System.out.println("Введите id, новое название и новую цену товара каждый параметр с новой строки");
+        System.out.println("Введите id товара находящегося в списке, который следует отредактировать," +
+                " новое название и новую цену товара каждый параметр с новой строки");
         int idEdit = 0;
         String nameEdit = "";
         int priceEdit = 0;

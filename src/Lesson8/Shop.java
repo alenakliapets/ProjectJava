@@ -32,6 +32,7 @@ public class Shop {
         for (int i = 0; i < list.size(); i++) {
             if (id==list.get(i).getId()) list.remove(i);
         }
+        System.out.println("Удаляем товар с id "+id);
     }
     public void editProduct (Product product){
         for (int i = 0; i < list.size(); i++) {
