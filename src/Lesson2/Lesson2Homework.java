@@ -19,6 +19,7 @@ public class Lesson2Homework {
            System.out.println("Все цифры числа различны");
        else System.out.println("Не все цифры числа различны");
    }
+
     public static void taskThree(){
         Scanner scanner=new Scanner(System.in);
         int ourNumber2=Integer.parseInt(scanner.nextLine());
